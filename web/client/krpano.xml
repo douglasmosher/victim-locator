@@ -2,7 +2,7 @@
 	<!-- the skin -->
 	<include url="skin/defaultskin.xml" />
 
-	<plugin name="video" url="plugins/videoplayer.swf" url.html5="plugins/videoplayer.js" videourl="stream_test.mp4" />
+	<plugin name="video" url="plugins/videoplayer.swf" url.html5="plugins/videoplayer.js" videourl="stream_default.mp4|stream_test.mp4" />
 	<image hfov="360" vfov="140">
 	   <sphere url="plugin:video" />
 	</image>
