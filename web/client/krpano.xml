@@ -1,5 +1,5 @@
 <krpano>
-	<plugin name="video" url="plugins/videoplayer.swf" url.html5="videoplayer.js" videourl="http://127.0.0.1:8082" />
+	<plugin name="video" url="plugins/videoplayer.swf" url.html5="plugins/videoplayer.js" videourl="http://127.0.0.1:8082|ws://192.168.49.180:8084/|testvideo.mp4" />
 	<image hfov="360" vfov="180">
 	   <sphere url="plugin:video" />
 	</image>
