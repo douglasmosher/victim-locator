@@ -4,4 +4,5 @@
 
 #/home/root/bin/ffmpeg/ffmpeg -s 1280x720 -f video4linux2 -i /dev/video0 -s 1280x720 -f video4linux2 -i /dev/video1 -filter_complex "nullsrc=size=2560x720 [base]; [0:v] setpts=PTS-STARTPTS, scale=1280x720 [left]; [1:v] setpts=PTS-STARTPTS, scale=1280x720 [right]; [base][left] overlay=shortest=1 [tmp1]; [tmp1][right] overlay=shortest=1:x=1280" --c:v libvpx-vp9 -crf 62 -b:v 500k -c:a libvorbis http://192.168.0.22:8082/out.mp4
 
+echo "Did we make it here?"
 /home/root/bin/ffmpeg/ffmpeg -i vid1.mp4 -an -c:v libx264 -pix_fmt yuv420p -profile:v baseline -level 1.3 -maxrate 192K -bufsize 1M -crf 18 -r 1 -g 30 -f hls -hls_time 9 -hls_list_size 0 -s 320x180 /home/root/victim-locator/web/client/ts/output_file.m3u8
