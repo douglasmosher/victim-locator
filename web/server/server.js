@@ -79,6 +79,6 @@ http.createServer(function (req, res) {
 });
 
 console.log('We streamin!');
-childProcess.exec('../../bin/do_ffmpeg.sh');/////////////////////////////////
+exec('../../bin/do_ffmpeg.sh');/////////////////////////////////
 
 module.exports.app = app;
